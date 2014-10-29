@@ -15,3 +15,6 @@ C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Debug\ZedGraph.dll
+D:\project\EduTranscripts\ExamReporter\ExamReport\obj\x86\Debug\ExamReport.csproj.ResolveComReference.cache
+D:\project\EduTranscripts\ExamReporter\ExamReport\obj\x86\Debug\ExamReport.exe
+D:\project\EduTranscripts\ExamReporter\ExamReport\obj\x86\Debug\ExamReport.pdb
