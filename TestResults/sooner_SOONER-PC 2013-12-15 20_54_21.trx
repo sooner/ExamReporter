@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e31ad87f-0f3c-45e0-ad1d-37b2e2f175c5" name="sooner@SOONER-PC 2013-12-15 20:54:21" runUser="sooner-PC\sooner" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="04b1cb9b-b98d-42da-9d0d-cc38865d8db0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sooner_SOONER-PC 2013-12-15 20_54_21">
+      <DeploymentItem filename="C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Debug\ExamReport.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-15T20:54:21.3357982+08:00" queuing="2013-12-15T20:54:21.3547993+08:00" start="2013-12-15T20:54:21.3617997+08:00" finish="2013-12-15T20:54:22.8768863+08:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="testcaseTest" storage="c:\users\sooner\documents\visual studio 2010\projects\examreport\test_statistic\bin\debug\test_statistic.dll" id="c7ad88b2-32b1-25e3-0f10-905fb5b6006d">
+      <Execution id="1e1cb7ec-9b21-4096-8a85-8b159ccf4972" />
+      <TestMethod codeBase="C:/Users/sooner/documents/visual studio 2010/Projects/ExamReport/test_statistic/bin/Debug/test_statistic.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="test_statistic.WordCreatorTest, test_statistic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="testcaseTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c7ad88b2-32b1-25e3-0f10-905fb5b6006d" executionId="1e1cb7ec-9b21-4096-8a85-8b159ccf4972" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1e1cb7ec-9b21-4096-8a85-8b159ccf4972" testId="c7ad88b2-32b1-25e3-0f10-905fb5b6006d" testName="testcaseTest" computerName="SOONER-PC" duration="00:00:01.1618561" startTime="2013-12-15T20:54:21.3678000+08:00" endTime="2013-12-15T20:54:22.6908757+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e1cb7ec-9b21-4096-8a85-8b159ccf4972">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at test_statistic.WordCreatorTest.testcaseTest() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\WordCreatorTest.cs:line 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

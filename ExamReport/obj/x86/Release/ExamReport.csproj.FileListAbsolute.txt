@@ -1,0 +1,17 @@
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ExamReport.csproj.ResolveComReference.cache
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\ExamReport.exe
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\ExamReport.pdb
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\office.dll
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\Microsoft.Vbe.Interop.dll
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\Microsoft.Office.Interop.SmartTag.dll
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\bin\Release\office.xml
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ExamReport.Form1.resources
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ExamReport.Properties.Resources.resources
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ExamReport.exe
+C:\Users\sooner\Documents\Visual Studio 2010\Projects\ExamReport\ExamReport\obj\x86\Release\ExamReport.pdb
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\bin\Release\ZedGraph.dll

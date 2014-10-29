@@ -1,0 +1,10 @@
+System.ArgumentException: 分组名“获取事实性信息”重复
+   at ExamReport.HK_database.create_groups() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\HK_database.cs:line 329
+   at ExamReport.HK_database.DBF_data_process(String fileadd) in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\HK_database.cs:line 232
+   at ExamReport.ExecuteMethod.HK_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\ExecuteMethod.cs:line 267
+   at ExamReport.ExecuteMethod.pre_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\ExecuteMethod.cs:line 159
+   at ExamReport.Form1.startProcess.data_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\Form1.cs:line 681
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()

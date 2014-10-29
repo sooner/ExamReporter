@@ -1,0 +1,12 @@
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\test_statistic.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\test_statistic.pdb
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport.exe
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\Microsoft.Office.Interop.SmartTag.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport.pdb
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\obj\Debug\test_statistic.dll
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\obj\Debug\test_statistic.pdb
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport_Accessor.exe
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport_Accessor.pdb
+C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ZedGraph.dll

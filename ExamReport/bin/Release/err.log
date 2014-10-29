@@ -1,0 +1,10 @@
+System.Runtime.InteropServices.COMException (0x800A1436): 抱歉，找不到您的文件。是否可能被移动、重命名或删除?
+   at Microsoft.Office.Interop.Word.Documents.Add(Object& Template, Object& NewTemplate, Object& DocumentType, Object& Visible)
+   at ExamReport.Partition_wordcreator.creating_word() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\Partition_wordcreator.cs:line 191
+   at ExamReport.ExecuteMethod.GK_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\ExecuteMethod.cs:line 621
+   at ExamReport.ExecuteMethod.pre_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\ExecuteMethod.cs:line 197
+   at ExamReport.Form1.startProcess.data_process() in C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\ExamReport\Form1.cs:line 668
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
