@@ -10,3 +10,15 @@ C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport_Accessor.exe
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ExamReport_Accessor.pdb
 C:\Users\sooner\documents\visual studio 2010\Projects\ExamReport\test_statistic\bin\Debug\ZedGraph.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\test_statistic.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\test_statistic.pdb
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\ExamReport.exe
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\ZedGraph.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\Microsoft.Office.Interop.SmartTag.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\ExamReport.pdb
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\ExamReport_Accessor.exe
+D:\project\EduTranscripts\ExamReporter\test_statistic\bin\Debug\ExamReport_Accessor.pdb
+D:\project\EduTranscripts\ExamReporter\test_statistic\obj\Debug\ResolveAssemblyReference.cache
+D:\project\EduTranscripts\ExamReporter\test_statistic\obj\Debug\test_statistic.dll
+D:\project\EduTranscripts\ExamReporter\test_statistic\obj\Debug\test_statistic.pdb

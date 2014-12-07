@@ -236,14 +236,14 @@ namespace ExamReport
                 case 2:
                     try
                     {
-                        int mark = Convert.ToInt32(value);
+                        double mark = Convert.ToDouble(value);
                         if (Math.Abs(mark) != mark && !(Utils.subject.Contains("理综") || Utils.subject.Contains("文综")))
                             throw new FormatException();
                     }
                     catch (FormatException e)
                     {
                         release();
-                        throw new ArgumentException("标准答案中满分值应该为正整数");
+                        throw new ArgumentException("标准答案中满分值应该为正数");
                     }
                     break;
                 case 3:

@@ -126,6 +126,8 @@
             this.label42 = new System.Windows.Forms.Label();
             this.shengwu_zhengzhi = new System.Windows.Forms.NumericUpDown();
             this.label41 = new System.Windows.Forms.Label();
+            this.school = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -316,14 +318,14 @@
             this.subject.FormattingEnabled = true;
             this.subject.Location = new System.Drawing.Point(201, 9);
             this.subject.Name = "subject";
-            this.subject.Size = new System.Drawing.Size(81, 20);
+            this.subject.Size = new System.Drawing.Size(69, 20);
             this.subject.TabIndex = 26;
             this.subject.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(302, 13);
+            this.label3.Location = new System.Drawing.Point(288, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 12);
             this.label3.TabIndex = 27;
@@ -332,9 +334,9 @@
             // report
             // 
             this.report.FormattingEnabled = true;
-            this.report.Location = new System.Drawing.Point(363, 9);
+            this.report.Location = new System.Drawing.Point(349, 9);
             this.report.Name = "report";
-            this.report.Size = new System.Drawing.Size(79, 20);
+            this.report.Size = new System.Drawing.Size(69, 20);
             this.report.TabIndex = 28;
             this.report.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
@@ -922,15 +924,16 @@
             // QX_list
             // 
             this.QX_list.FormattingEnabled = true;
-            this.QX_list.Location = new System.Drawing.Point(527, 8);
+            this.QX_list.Location = new System.Drawing.Point(497, 8);
             this.QX_list.Name = "QX_list";
-            this.QX_list.Size = new System.Drawing.Size(78, 20);
+            this.QX_list.Size = new System.Drawing.Size(64, 20);
             this.QX_list.TabIndex = 66;
+            this.QX_list.SelectedIndexChanged += new System.EventHandler(this.QX_list_SelectedIndexChanged);
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(464, 12);
+            this.label40.Location = new System.Drawing.Point(434, 12);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(65, 12);
             this.label40.TabIndex = 67;
@@ -1046,12 +1049,31 @@
             this.label41.TabIndex = 0;
             this.label41.Text = "生物：";
             // 
+            // school
+            // 
+            this.school.FormattingEnabled = true;
+            this.school.Location = new System.Drawing.Point(643, 8);
+            this.school.Name = "school";
+            this.school.Size = new System.Drawing.Size(80, 20);
+            this.school.TabIndex = 72;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(581, 11);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(59, 12);
+            this.label32.TabIndex = 73;
+            this.label32.Text = "学校代码:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(735, 619);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.school);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label40);
@@ -1231,6 +1253,8 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.NumericUpDown shengwu_zhengzhi;
         private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.ComboBox school;
+        private System.Windows.Forms.Label label32;
     }
 }
 

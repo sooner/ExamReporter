@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using System.Configuration;
 
 using System.Drawing.Drawing2D;
 
@@ -16,6 +17,8 @@ namespace ExamReport
     public delegate void ErrorMessage(string Message);
     public partial class Form1 : Form
     {
+        SchoolCodeConfig schoolcode;
+
         Thread thread;
          
         public Form1()
@@ -43,6 +46,8 @@ namespace ExamReport
             save_address.Text = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
 
             groupBox5.Enabled = false;
+
+            schoolcode = (SchoolCodeConfig)ConfigurationManager.GetSection("SchoolCode");
 
         }
         public void ErrorM(string message)
@@ -129,6 +134,9 @@ namespace ExamReport
                     report.Items.Add("总体");
                     report.Items.Add("区县");
                     report.ResetText();
+
+                    school.Items.Clear();
+                    school.ResetText();
                     break;
                 case 1:
                     Quxian_disable();
@@ -152,6 +160,9 @@ namespace ExamReport
 
                     report.Items.Clear();
                     report.ResetText();
+
+                    school.Items.Clear();
+                    school.ResetText();
                     break;
                 case 2:
                     Quxian_disable();
@@ -180,7 +191,12 @@ namespace ExamReport
                     report.Items.Add("区县");
                     report.Items.Add("两类示范校");
                     report.Items.Add("城郊");
+                    report.Items.Add("学校");
                     report.ResetText();
+
+                    school.Items.Clear();
+
+                    school.ResetText();
                     break;
                 default:
                     break;
@@ -300,29 +316,16 @@ namespace ExamReport
         }
         void AddQX()
         {
-            QX_list.Items.Clear();
-            QX_list.Items.Add("东城区");
-            QX_list.Items.Add("西城区");
-            QX_list.Items.Add("朝阳区");
-            QX_list.Items.Add("丰台区");
-            QX_list.Items.Add("石景山区");
-            QX_list.Items.Add("海淀区");
-            QX_list.Items.Add("门头沟区");
-            QX_list.Items.Add("燕山区");
-            QX_list.Items.Add("房山区");
-            QX_list.Items.Add("通州区");
-            QX_list.Items.Add("顺义区");
-            QX_list.Items.Add("昌平区");
-            QX_list.Items.Add("大兴区");
-            QX_list.Items.Add("怀柔区");
-            QX_list.Items.Add("平谷区");
-            QX_list.Items.Add("密云区");
-            QX_list.Items.Add("延庆区");
+            SchoolCodeConfig schoolcode = (SchoolCodeConfig)ConfigurationManager.GetSection("DistrictCode");
+            QX_list.DataSource = schoolcode.KeyValues.Cast<MyKeyValueSetting>().ToDataTable();
+            QX_list.DisplayMember = "value";
+            QX_list.ValueMember = "key";              
+            
             QX_list.ResetText();
         }
         void deleteQX()
         {
-            QX_list.Items.Clear();
+            QX_list.DataSource = null;
             QX_list.ResetText();
         }
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -350,7 +353,15 @@ namespace ExamReport
                 SFX_disable();
                 deleteQX();
             }
-            else{
+            else if (report.SelectedItem.ToString().Trim().Equals("学校"))
+            {
+                Quxian_enable();
+                CJ_enable();
+                SFX_enable();
+                AddQX();
+            }
+            else
+            {
                 Quxian_disable();
                 SFX_disable();
                 CJ_disable();
@@ -539,7 +550,7 @@ namespace ExamReport
                     exe.Quxian_catagory = QXS_address.Text;
 
                     exe.Cj_catagory = CJ_address.Text;
-                    exe.Quxian_list = QX_list.SelectedItem.ToString();
+                    exe.Quxian_list = QX_list.SelectedValue.ToString().Trim();
                     Utils.QX = QX_list.SelectedItem.ToString();
                 }
                 if (exe.Report_style.Equals("两类示范校"))
@@ -714,6 +725,27 @@ namespace ExamReport
             }
 
         }
+
+        private void QX_list_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (QX_list.DataSource != null)
+            {
+                
+                school.DataSource = (from kv in schoolcode.KeyValues.Cast<MyKeyValueSetting>()
+                                     where kv.Key.StartsWith(QX_list.SelectedValue.ToString())
+                                     let s = string.Format("{0} {1}", kv.Key, kv.Value)
+                                     select s).ToArray();
+
+                school.ResetText();
+            }
+            else
+            {
+                school.DataSource = null;
+                school.ResetText();
+            }
+
+        }
+
 
         
         

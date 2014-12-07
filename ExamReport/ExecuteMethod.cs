@@ -140,8 +140,8 @@ namespace ExamReport
 
         public void pre_process()
         {
-            try
-            {
+            //try
+            //{
                 Utils.exam = style;
                 Utils.subject = subject;
 
@@ -196,14 +196,14 @@ namespace ExamReport
                     ZK_process();
                 if (style.Equals("高考"))
                     GK_process();
-            }
-            catch (System.Threading.ThreadAbortException e)
-            {
-            }
-            catch (Exception e)
-            {
-                form.ErrorM(e.Message.ToString());
-            }
+            //}
+            //catch (System.Threading.ThreadAbortException e)
+            //{
+            //}
+            //catch (Exception e)
+            //{
+            //    form.ErrorM(e.Message.ToString());
+            //}
             
         }
         public void ZK_process()
@@ -248,8 +248,8 @@ namespace ExamReport
                     totaldata.Add(CQ.result);
                 }
 
-                DataTable QX_total_data = db._basic_data.equalfilter("QX", QXTransfer(Quxian_list));
-                DataTable QX_groups_data = db._group_data.equalfilter("QX", QXTransfer(Quxian_list));
+                DataTable QX_total_data = db._basic_data.equalfilter("QX", Quxian_list);
+                DataTable QX_groups_data = db._group_data.equalfilter("QX", Quxian_list);
 
                 Partition_statistic QX_total = new Partition_statistic("区整体", QX_total_data, fullmark, ans.dt, QX_groups_data, groups.dt, db._group_num);
                 QX_total.statistic_process(false);
@@ -352,7 +352,7 @@ namespace ExamReport
                         stat.partition_process();
                         result.Add(stat);
                     }
-                    DataTable bq_data = db._basic_data.equalfilter("qxdm", QXTransfer(Quxian_list));
+                    DataTable bq_data = db._basic_data.equalfilter("qxdm", Quxian_list);
                     ZF_statistic bq = new ZF_statistic(bq_data, fullmark, "本区");
                     bq.partition_process();
                     result.Add(bq);
@@ -535,11 +535,11 @@ namespace ExamReport
                         CalculatePartition(ZH_total, CJ_list[i][0].ToString(), temp, temp_group, fullmark, wenli.dt, db._group_num, true);
                         CalculatePartition(total, CJ_list[i][0].ToString(), single, single_table, sub_fullmark, groups.dt, db._group_num, false);
                     }
-                    DataTable QX_ZH_data = db._basic_data.equalfilter("QX", QXTransfer(Quxian_list));
-                    DataTable QX_ZH_group = db.zh_group_data.equalfilter("QX", QXTransfer(Quxian_list));
+                    DataTable QX_ZH_data = db._basic_data.equalfilter("QX", Quxian_list);
+                    DataTable QX_ZH_group = db.zh_group_data.equalfilter("QX", Quxian_list);
 
-                    DataTable QX_data = db.zh_single_data.equalfilter("QX", QXTransfer(Quxian_list));
-                    DataTable QX_group = db._group_data.equalfilter("QX", QXTransfer(Quxian_list));
+                    DataTable QX_data = db.zh_single_data.equalfilter("QX", Quxian_list);
+                    DataTable QX_group = db._group_data.equalfilter("QX", Quxian_list);
 
                     CalculatePartition(ZH_total, "区整体", QX_ZH_data, QX_ZH_group, fullmark, wenli.dt, db._group_num, true);
                     CalculatePartition(total, "区整体", QX_data, QX_group, sub_fullmark, groups.dt, db._group_num, false);
@@ -650,8 +650,8 @@ namespace ExamReport
                     {
                         Utils.WSLG = true;
                         ArrayList WSLG = new ArrayList();
-                        DataTable QX_data = db._basic_data.equalfilter("QX", QXTransfer(Quxian_list));
-                        DataTable QX_group = db._group_data.equalfilter("QX", QXTransfer(Quxian_list));
+                        DataTable QX_data = db._basic_data.equalfilter("QX", Quxian_list);
+                        DataTable QX_group = db._group_data.equalfilter("QX", Quxian_list);
 
                         int group = QX_data.SeperateGroups(grouptype, divider);
                         QX_group.SeperateGroups(grouptype, divider);
@@ -714,8 +714,8 @@ namespace ExamReport
                 result.Add(stat.result);
             }
 
-            DataTable QX = data.equalfilter("QX", QXTransfer(Quxian_list));
-            DataTable QX_group = group.equalfilter("QX", QXTransfer(Quxian_list));
+            DataTable QX = data.equalfilter("QX", Quxian_list);
+            DataTable QX_group = group.equalfilter("QX", Quxian_list);
             Partition_statistic qx_stat = new Partition_statistic("区整体", QX, fullmark, ans.dt, QX_group, groups.dt, groupnum);
             qx_stat.statistic_process(false);
             result.Add(qx_stat.result);
@@ -864,48 +864,48 @@ namespace ExamReport
             sdata.Add(ClassTotal.result);
         }
 
-        string QXTransfer(string QX)
-        {
-            switch (QX) 
-            {
-                case "东城区":
-                    return "01";
-                case "西城区":
-                    return "02";
-                case "朝阳区":
-                    return "05";
-                case "丰台区":
-                    return "06";
-                case "石景山区":
-                    return "07";
-                case "海淀区":
-                    return "08";
-                case "门头沟区":
-                    return "09";
-                case "燕山区":
-                    return "10";
-                case "房山区":
-                    return "11";
-                case "通州区":
-                    return "12";
-                case "顺义区":
-                    return "13";
-                case "昌平区":
-                    return "14";
-                case "大兴区":
-                    return "15";
-                case "怀柔区":
-                    return "16";
-                case "平谷区":
-                    return "17";
-                case "密云区":
-                    return "28";
-                case "延庆区":
-                    return "29";
-                default:
-                    return "";
-            }
-        }
+        //string QXTransfer(string QX)
+        //{
+        //    switch (QX) 
+        //    {
+        //        case "东城区":
+        //            return "01";
+        //        case "西城区":
+        //            return "02";
+        //        case "朝阳区":
+        //            return "05";
+        //        case "丰台区":
+        //            return "06";
+        //        case "石景山区":
+        //            return "07";
+        //        case "海淀区":
+        //            return "08";
+        //        case "门头沟区":
+        //            return "09";
+        //        case "燕山区":
+        //            return "10";
+        //        case "房山区":
+        //            return "11";
+        //        case "通州区":
+        //            return "12";
+        //        case "顺义区":
+        //            return "13";
+        //        case "昌平区":
+        //            return "14";
+        //        case "大兴区":
+        //            return "15";
+        //        case "怀柔区":
+        //            return "16";
+        //        case "平谷区":
+        //            return "17";
+        //        case "密云区":
+        //            return "28";
+        //        case "延庆区":
+        //            return "29";
+        //        default:
+        //            return "";
+        //    }
+        //}
 
     }
 }

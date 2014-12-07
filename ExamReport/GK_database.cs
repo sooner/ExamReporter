@@ -236,6 +236,19 @@ namespace ExamReport
             bool first = true;
 
             string omrstr = dt.Columns.Contains("Omrstr") ? "Omrstr" : "Info";
+
+            if (!dt.Columns.Contains("Zf"))
+            {
+                dt.Columns.Add("Zf", typeof(decimal));
+                foreach (DataRow dr in dt.Rows)
+                {
+                    decimal zf = 0;
+                    foreach (DataColumn dc in dt.Columns)
+                        if (topic.IsMatch(dc.ColumnName.ToString().Trim()))
+                            zf += (decimal)dr[dc];
+                    dr["Zf"] = zf;
+                }
+            }
             foreach (DataRow dr in dt.Rows)
             {
                 string an = (string)dr[omrstr];
